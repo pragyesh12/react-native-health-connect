@@ -20,3 +20,7 @@ const HealthConnect = NativeModules.HealthConnect
 export function multiply(a: number, b: number): Promise<number> {
   return HealthConnect.multiply(a, b);
 }
+
+export function authorize(): Promise<any> {
+  return HealthConnect.authorize();
+}
